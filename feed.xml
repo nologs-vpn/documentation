@@ -3,7 +3,7 @@
     <title>NoLogs VPN</title>
     <link href="https://nologs-vpn.github.io/documentation/feed.xml" rel="self" />
     <link href="https://nologs-vpn.github.io/documentation" />
-    <updated>2020-10-25T00:39:12+03:00</updated>
+    <updated>2020-10-25T01:33:12+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -14,30 +14,59 @@
         <author>
             <name>Romeo Mihalcea</name>
         </author>
-        <link href="https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/"/>
-        <id>https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/</id>
-            <category term="upgrade"/>
-            <category term="server"/>
+        <link href="https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server-2/"/>
+        <id>https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server-2/</id>
 
-        <updated>2020-10-25T00:37:00+03:00</updated>
+        <updated>2020-10-25T01:33:12+03:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://nologs-vpn.github.io/documentation/media/posts/1/undraw_upgrade_06a0.png" alt="How to upgrade server" />
-                    Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to do&hellip;
+                     Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://nologs-vpn.github.io/documentation/media/posts/1/undraw_upgrade_06a0.png" alt="How to upgrade server" />
-                Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to do it, step by step.
+                
+  <p>
+    Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to do it, step by step.<br>
+  </p>
 
-Our deploy worker only creates the cheapest plan when spawning your server to save on your expenses and because a single client should be handled pretty well by the server anyway.
+  <p>
+    Our deploy worker only creates the cheapest plan when spawning your server to save on your expenses and because a single client should be handled pretty well by the server anyway.<br>
+  </p>
 
-Once you start adding more clients and your workload is putting a higher pressure on the server it is time to log into your Digitalocean account and perform the upgrade which involves a server reboot so be prepared for a drop on the connection with the VPN.
+  <p>
+    Once you start adding more clients and your workload is putting a higher pressure on the server it is time to log into your Digitalocean account and perform the upgrade which involves a server reboot so be prepared for a drop on the connection with the VPN.<br>
+  </p>
 
-The first step is to identify your server and click on it so we can navigate to the info page where all the options will be available to us. One thing that I recommend before any major operation such as this one is to backup your server. So go ahead and power off the server and then navigate to the "Backups" page.
-![backup](media/files/screenshot-cloud.digitalocean.com-2020.10.25-00_27_56.png)
+  <p>
+    The first step is to identify your server and click on it so we can navigate to the info page where all the options will be available to us. One thing that I recommend before any major operation such as this one is to take a snapshot of your server. Keep in mind that, during the creation of the snapshot, your VM instance will be powered down.<br>
+  </p>
 
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/snapshot.png" sizes="(max-width: 749px) 100vw, 749px" srcset="file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/responsive/snapshot-xs.png 300w ,file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/responsive/snapshot-sm.png 480w ,file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/responsive/snapshot-md.png 749w"  height="806" width="1128" alt="" />
+      
+    </figure>
+
+  <p>
+    This operation will allow us to revert back to a working state in case something unplanned takes place.
+  </p>
+
+  <p>
+    Now that our server has a snapshot we can go ahead with the upgrade process so let's navigate to the "Resize" page.
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/resize.png" sizes="(max-width: 749px) 100vw, 749px" srcset="file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/responsive/resize-xs.png 300w ,file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/responsive/resize-sm.png 480w ,file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/responsive/resize-md.png 749w"  height="1147" width="1104" alt="" />
+      
+    </figure>
+
+  <p>
+    Usually, a VPN server is heavier on the CPU&nbsp; than anything else so I recommend looking at upgrades in terms of CPU more than anything else. Keep in mind that your VM needs to be powered off before attempting the upgrade.
+  </p>
+
+  <p>
+    That's it. Once the upgrade process is done you can power the VM back on and connect to your VPN.
+  </p>
             ]]>
         </content>
     </entry>
