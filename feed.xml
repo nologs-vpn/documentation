@@ -3,7 +3,7 @@
     <title>NoLogs VPN</title>
     <link href="https://nologs-vpn.github.io/documentation/feed.xml" rel="self" />
     <link href="https://nologs-vpn.github.io/documentation" />
-    <updated>2020-10-25T01:50:20+03:00</updated>
+    <updated>2020-10-25T01:52:13+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -19,7 +19,7 @@
             <category term="upgrade"/>
             <category term="server"/>
 
-        <updated>2020-10-25T01:50:20+03:00</updated>
+        <updated>2020-10-25T01:52:13+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://nologs-vpn.github.io/documentation/media/posts/2/undraw_upgrade_06a0.png" alt="How to upgrade your server" />
@@ -47,7 +47,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/snapshot.png" sizes="(max-width: 749px) 100vw, 749px" srcset="file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/responsive/snapshot-xs.png 300w ,file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/responsive/snapshot-sm.png 480w ,file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/responsive/snapshot-md.png 749w"  height="806" width="1128" alt="" />
+      <img loading="lazy" src="https://nologs-vpn.github.io/documentation/media/posts/2/snapshot-2.png" sizes="(max-width: 749px) 100vw, 749px" srcset="https://nologs-vpn.github.io/documentation/media/posts/2/responsive/snapshot-2-xs.png 300w ,https://nologs-vpn.github.io/documentation/media/posts/2/responsive/snapshot-2-sm.png 480w ,https://nologs-vpn.github.io/documentation/media/posts/2/responsive/snapshot-2-md.png 749w"  height="806" width="1128" alt="" />
       
     </figure>
 
@@ -60,7 +60,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/resize.png" sizes="(max-width: 749px) 100vw, 749px" srcset="file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/responsive/resize-xs.png 300w ,file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/responsive/resize-sm.png 480w ,file:///home/ciokan/Documents/Publii/sites/nologs-vpn/input/media/posts/temp/responsive/resize-md.png 749w"  height="1147" width="1104" alt="" />
+      <img loading="lazy" src="https://nologs-vpn.github.io/documentation/media/posts/2/resize-2.png" sizes="(max-width: 749px) 100vw, 749px" srcset="https://nologs-vpn.github.io/documentation/media/posts/2/responsive/resize-2-xs.png 300w ,https://nologs-vpn.github.io/documentation/media/posts/2/responsive/resize-2-sm.png 480w ,https://nologs-vpn.github.io/documentation/media/posts/2/responsive/resize-2-md.png 749w"  height="1147" width="1104" alt="" />
       
     </figure>
 
