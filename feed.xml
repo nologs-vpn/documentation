@@ -3,7 +3,7 @@
     <title>NoLogs VPN</title>
     <link href="https://nologs-vpn.github.io/documentation/feed.xml" rel="self" />
     <link href="https://nologs-vpn.github.io/documentation" />
-    <updated>2020-10-25T01:33:12+03:00</updated>
+    <updated>2020-10-25T01:50:20+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -16,15 +16,19 @@
         </author>
         <link href="https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server-2/"/>
         <id>https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server-2/</id>
+            <category term="upgrade"/>
+            <category term="server"/>
 
-        <updated>2020-10-25T01:33:12+03:00</updated>
+        <updated>2020-10-25T01:50:20+03:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://nologs-vpn.github.io/documentation/media/posts/2/undraw_upgrade_06a0.png" alt="How to upgrade your server" />
                      Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <img src="https://nologs-vpn.github.io/documentation/media/posts/2/undraw_upgrade_06a0.png" alt="How to upgrade your server" />
                 
   <p>
     Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to do it, step by step.<br>
