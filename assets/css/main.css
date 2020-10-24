@@ -1898,18 +1898,33 @@ textarea {
   margin-bottom: 1.6rem;
 }
 
-.author-note {
+.author__note {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.author-note > img {
+.author__note > img {
   border-radius: 50%;
   display: inline-block;
   height: 4rem;
   margin-top: calc(1.8666666667rem + 1vw);
   margin-right: 1.6rem;
   width: 4rem;
+}
+.author__website {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 0.5333333333rem;
+}
+.author__website a {
+  margin-left: 0.4rem;
+}
+.author__website svg {
+  stroke: #2D61C9;
 }
 
 .search__form {
