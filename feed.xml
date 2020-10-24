@@ -3,23 +3,106 @@
     <title>NoLogs VPN</title>
     <link href="https://nologs-vpn.github.io/documentation/feed.xml" rel="self" />
     <link href="https://nologs-vpn.github.io/documentation" />
-    <updated>2020-10-25T01:52:13+03:00</updated>
+    <updated>2020-10-25T02:20:10+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
     <id>https://nologs-vpn.github.io/documentation</id>
 
     <entry>
+        <title>How to add a new OpenVPN user</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://nologs-vpn.github.io/documentation/how-to-add-a-new-openvpn-user/"/>
+        <id>https://nologs-vpn.github.io/documentation/how-to-add-a-new-openvpn-user/</id>
+            <category term="user"/>
+            <category term="server"/>
+            <category term="openvpn"/>
+
+        <updated>2020-10-25T02:20:10+03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://nologs-vpn.github.io/documentation/media/posts/5/undraw_server_cluster_jwwq.png" alt="" />
+                    In this post we will show you how to create new users for your OpenVPN instance. For this operation to be possible you will need&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://nologs-vpn.github.io/documentation/media/posts/5/undraw_server_cluster_jwwq.png" alt="" />
+                <p>In this post we will show you how to create new users for your OpenVPN instance.</p>
+<p>For this operation to be possible you will need to have root access to your server. If you don't know how to gain that, please <a href="https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/">follow our guide</a>.</p>
+<p><a href="https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/"></a>After logging in the ssh console you can run the following command in order to create new users:</p>
+<pre>docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm -it kylemanna/openvpn easyrsa build-client-full CLIENTNAME nopass</pre>
+<p>Replace <code>CLIENTNAME</code> with a username.</p>
+<p>This will generate the files for the new user and place them in the right directory. The command will also prompt for your password (<strong>it's the one that was emailed to you when we sent you the first config</strong>).</p>
+<p>With the new user created we need to retrieve the config so here's a new command you need to run:</p>
+<pre>docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm kylemanna/openvpn ovpn_getclient CLIENTNAME &gt; CLIENTNAME.ovpn</pre>
+<p>The above command printed the entire config and piped it into a file called <code>CLIENTNAME.ovpn</code> which is now sitting in your home folder. To view and copy the contents you can run <code>cat CLIENTNAME.ovpn</code>. That's it!</p>
+<p>In all these commands you need to replace <code>CLIENTNAME</code> with the username.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>How to access the console of your VM</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/"/>
+        <id>https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/</id>
+            <category term="server"/>
+            <category term="root"/>
+            <category term="console"/>
+
+        <updated>2020-10-25T02:08:42+03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://nologs-vpn.github.io/documentation/media/posts/4/undraw_server_cluster_jwwq.png" alt="How to access the console of your VM" />
+                     In this post I will show you how to reset your server's root password and gain access to the root console. The next thing&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://nologs-vpn.github.io/documentation/media/posts/4/undraw_server_cluster_jwwq.png" alt="How to access the console of your VM" />
+                
+  <p>
+    In this post I will show you how to reset your server's root password and gain access to the root console.
+  </p>
+
+  <p>
+    The next thing after receiving your config should be to allow others to connect without sharing the security credentials but, by doing so, you will have to work with the unix console a bit and that means gaining access to the root user.
+  </p>
+
+  <p>
+    After install, our drone/worker removes the authentication key that was used to create the VM. This means that, without a root password, you will not be able to login to the ssh. Luckily, we can reset that password and login so go ahead to the&nbsp; VM page and navigate to <b>Access</b> part.
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://nologs-vpn.github.io/documentation/media/posts/4/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47.png" sizes="(max-width: 749px) 100vw, 749px" srcset="https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-xs.png 300w ,https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-sm.png 480w ,https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-md.png 749w"  height="744" width="1242" alt="" />
+      
+    </figure>
+
+  <p>
+    From the screenshot you can see the "Reset Root Password" button. Click on it and wait for an email to arrive with the new password but bear in mind that your VM has to be powered off for this operation to continue.
+  </p>
+
+  <p>
+    With the new root password in your clipboard go ahead and SSH into your server. You will be prompted for the password and also for a new one immediately after logging in.
+  </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
         <title>How to upgrade your server</title>
         <author>
             <name>Romeo Mihalcea</name>
         </author>
-        <link href="https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server-2/"/>
-        <id>https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server-2/</id>
+        <link href="https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/"/>
+        <id>https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/</id>
             <category term="upgrade"/>
             <category term="server"/>
 
-        <updated>2020-10-25T01:52:13+03:00</updated>
+        <updated>2020-10-25T01:53:17+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://nologs-vpn.github.io/documentation/media/posts/2/undraw_upgrade_06a0.png" alt="How to upgrade your server" />

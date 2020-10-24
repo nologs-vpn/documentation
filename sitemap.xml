@@ -5,8 +5,24 @@
 <loc>https://nologs-vpn.github.io/documentation/</loc>
 </url>
 <url>
-<loc>https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server-2/</loc>
-<lastmod>2020-10-25T01:52:13+03:00</lastmod>
+<loc>https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/</loc>
+<lastmod>2020-10-25T02:08:42+03:00</lastmod>
+<image:image>
+<image:loc>https://nologs-vpn.github.io/documentation/media/posts/4/undraw_server_cluster_jwwq.png</image:loc>
+<image:title><![CDATA[How to access the console of your VM]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://nologs-vpn.github.io/documentation/how-to-add-a-new-openvpn-user/</loc>
+<lastmod>2020-10-25T02:20:10+03:00</lastmod>
+<image:image>
+<image:loc>https://nologs-vpn.github.io/documentation/media/posts/5/undraw_server_cluster_jwwq.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/</loc>
+<lastmod>2020-10-25T01:53:17+03:00</lastmod>
 <image:image>
 <image:loc>https://nologs-vpn.github.io/documentation/media/posts/2/undraw_upgrade_06a0.png</image:loc>
 <image:title><![CDATA[How to upgrade your server]]></image:title>

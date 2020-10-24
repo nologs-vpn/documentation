@@ -10,8 +10,44 @@
     },
     "items": [
         {
-            "id": "https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server-2/",
-            "url": "https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server-2/",
+            "id": "https://nologs-vpn.github.io/documentation/how-to-add-a-new-openvpn-user/",
+            "url": "https://nologs-vpn.github.io/documentation/how-to-add-a-new-openvpn-user/",
+            "title": "How to add a new OpenVPN user",
+            "summary": "In this post we will show you how to create new users for your OpenVPN instance. For this operation to be possible you will need&hellip;",
+            "content_html": "<p>In this post we will show you how to create new users for your OpenVPN instance.</p>\n<p>For this operation to be possible you will need to have root access to your server. If you don't know how to gain that, please <a href=\"https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/\">follow our guide</a>.</p>\n<p><a href=\"https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/\"></a>After logging in the ssh console you can run the following command in order to create new users:</p>\n<pre>docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm -it kylemanna/openvpn easyrsa build-client-full CLIENTNAME nopass</pre>\n<p>Replace <code>CLIENTNAME</code> with a username.</p>\n<p>This will generate the files for the new user and place them in the right directory. The command will also prompt for your password (<strong>it's the one that was emailed to you when we sent you the first config</strong>).</p>\n<p>With the new user created we need to retrieve the config so here's a new command you need to run:</p>\n<pre>docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm kylemanna/openvpn ovpn_getclient CLIENTNAME &gt; CLIENTNAME.ovpn</pre>\n<p>The above command printed the entire config and piped it into a file called <code>CLIENTNAME.ovpn</code> which is now sitting in your home folder. To view and copy the contents you can run <code>cat CLIENTNAME.ovpn</code>. That's it!</p>\n<p>In all these commands you need to replace <code>CLIENTNAME</code> with the username.</p>",
+            "image": "https://nologs-vpn.github.io/documentation/media/posts/5/undraw_server_cluster_jwwq.png",
+            "author": {
+                "name": "Romeo Mihalcea"
+            },
+            "tags": [
+                   "user",
+                   "server",
+                   "openvpn"
+            ],
+            "date_published": "2020-10-25T02:16:53+03:00",
+            "date_modified": "2020-10-25T02:20:10+03:00"
+        },
+        {
+            "id": "https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/",
+            "url": "https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/",
+            "title": "How to access the console of your VM",
+            "summary": " In this post I will show you how to reset your server's root password and gain access to the root console. The next thing&hellip;",
+            "content_html": "\n  <p>\n    In this post I will show you how to reset your server's root password and gain access to the root console.\n  </p>\n\n  <p>\n    The next thing after receiving your config should be to allow others to connect without sharing the security credentials but, by doing so, you will have to work with the unix console a bit and that means gaining access to the root user.\n  </p>\n\n  <p>\n    After install, our drone/worker removes the authentication key that was used to create the VM. This means that, without a root password, you will not be able to login to the ssh. Luckily, we can reset that password and login so go ahead to the&nbsp; VM page and navigate to <b>Access</b> part.\n  </p>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://nologs-vpn.github.io/documentation/media/posts/4/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47.png\" sizes=\"(max-width: 749px) 100vw, 749px\" srcset=\"https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-xs.png 300w ,https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-sm.png 480w ,https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-md.png 749w\"  height=\"744\" width=\"1242\" alt=\"\" />\n      \n    </figure>\n\n  <p>\n    From the screenshot you can see the \"Reset Root Password\" button. Click on it and wait for an email to arrive with the new password but bear in mind that your VM has to be powered off for this operation to continue.\n  </p>\n\n  <p>\n    With the new root password in your clipboard go ahead and SSH into your server. You will be prompted for the password and also for a new one immediately after logging in.\n  </p>",
+            "image": "https://nologs-vpn.github.io/documentation/media/posts/4/undraw_server_cluster_jwwq.png",
+            "author": {
+                "name": "Romeo Mihalcea"
+            },
+            "tags": [
+                   "server",
+                   "root",
+                   "console"
+            ],
+            "date_published": "2020-10-25T01:56:46+03:00",
+            "date_modified": "2020-10-25T02:08:42+03:00"
+        },
+        {
+            "id": "https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/",
+            "url": "https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/",
             "title": "How to upgrade your server",
             "summary": " Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to&hellip;",
             "content_html": "\n  <p>\n    Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to do it, step by step.<br>\n  </p>\n\n  <p>\n    Our deploy worker only creates the cheapest plan when spawning your server to save on your expenses and because a single client should be handled pretty well by the server anyway.<br>\n  </p>\n\n  <p>\n    Once you start adding more clients and your workload is putting a higher pressure on the server it is time to log into your Digitalocean account and perform the upgrade which involves a server reboot so be prepared for a drop on the connection with the VPN.<br>\n  </p>\n\n  <p>\n    The first step is to identify your server and click on it so we can navigate to the info page where all the options will be available to us. One thing that I recommend before any major operation such as this one is to take a snapshot of your server. Keep in mind that, during the creation of the snapshot, your VM instance will be powered down.<br>\n  </p>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://nologs-vpn.github.io/documentation/media/posts/2/snapshot-2.png\" sizes=\"(max-width: 749px) 100vw, 749px\" srcset=\"https://nologs-vpn.github.io/documentation/media/posts/2/responsive/snapshot-2-xs.png 300w ,https://nologs-vpn.github.io/documentation/media/posts/2/responsive/snapshot-2-sm.png 480w ,https://nologs-vpn.github.io/documentation/media/posts/2/responsive/snapshot-2-md.png 749w\"  height=\"806\" width=\"1128\" alt=\"\" />\n      \n    </figure>\n\n  <p>\n    This operation will allow us to revert back to a working state in case something unplanned takes place.\n  </p>\n\n  <p>\n    Now that our server has a snapshot we can go ahead with the upgrade process so let's navigate to the \"Resize\" page.\n  </p>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://nologs-vpn.github.io/documentation/media/posts/2/resize-2.png\" sizes=\"(max-width: 749px) 100vw, 749px\" srcset=\"https://nologs-vpn.github.io/documentation/media/posts/2/responsive/resize-2-xs.png 300w ,https://nologs-vpn.github.io/documentation/media/posts/2/responsive/resize-2-sm.png 480w ,https://nologs-vpn.github.io/documentation/media/posts/2/responsive/resize-2-md.png 749w\"  height=\"1147\" width=\"1104\" alt=\"\" />\n      \n    </figure>\n\n  <p>\n    Usually, a VPN server is heavier on the CPU&nbsp; than anything else so I recommend looking at upgrades in terms of CPU more than anything else. Keep in mind that your VM needs to be powered off before attempting the upgrade.\n  </p>\n\n  <p>\n    That's it. Once the upgrade process is done you can power the VM back on and connect to your VPN.\n  </p>",
@@ -24,7 +60,7 @@
                    "server"
             ],
             "date_published": "2020-10-25T01:07:53+03:00",
-            "date_modified": "2020-10-25T01:52:13+03:00"
+            "date_modified": "2020-10-25T01:53:17+03:00"
         }
     ]
 }
