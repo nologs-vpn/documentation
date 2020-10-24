@@ -1,0 +1,30 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "NoLogs VPN",
+    "description": "",
+    "home_page_url": "https://nologs-vpn.github.io/documentation",
+    "feed_url": "https://nologs-vpn.github.io/documentation/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Romeo Mihalcea"
+    },
+    "items": [
+        {
+            "id": "https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/",
+            "url": "https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/",
+            "title": "How to upgrade your server",
+            "summary": "Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to do&hellip;",
+            "content_html": "Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to do it, step by step.\n\nOur deploy worker only creates the cheapest plan when spawning your server to save on your expenses and because a single client should be handled pretty well by the server anyway.\n\nOnce you start adding more clients and your workload is putting a higher pressure on the server it is time to log into your Digitalocean account and perform the upgrade which involves a server reboot so be prepared for a drop on the connection with the VPN.\n\nThe first step is to identify your server and click on it so we can navigate to the info page where all the options will be available to us. One thing that I recommend before any major operation such as this one is to backup your server. So go ahead and power off the server and then navigate to the \"Backups\" page.\n![backup](media/files/screenshot-cloud.digitalocean.com-2020.10.25-00_27_56.png)\n",
+            "image": "https://nologs-vpn.github.io/documentation/media/posts/1/undraw_upgrade_06a0.png",
+            "author": {
+                "name": "Romeo Mihalcea"
+            },
+            "tags": [
+                   "upgrade",
+                   "server"
+            ],
+            "date_published": "2020-10-25T00:13:22+03:00",
+            "date_modified": "2020-10-25T00:37:00+03:00"
+        }
+    ]
+}

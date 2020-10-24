@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>NoLogs VPN</title>
+    <link href="https://nologs-vpn.github.io/documentation/feed.xml" rel="self" />
+    <link href="https://nologs-vpn.github.io/documentation" />
+    <updated>2020-10-25T00:39:12+03:00</updated>
+    <author>
+        <name>Romeo Mihalcea</name>
+    </author>
+    <id>https://nologs-vpn.github.io/documentation</id>
+
+    <entry>
+        <title>How to upgrade your server</title>
+        <author>
+            <name>Romeo Mihalcea</name>
+        </author>
+        <link href="https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/"/>
+        <id>https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/</id>
+            <category term="upgrade"/>
+            <category term="server"/>
+
+        <updated>2020-10-25T00:37:00+03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://nologs-vpn.github.io/documentation/media/posts/1/undraw_upgrade_06a0.png" alt="How to upgrade server" />
+                    Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to do&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://nologs-vpn.github.io/documentation/media/posts/1/undraw_upgrade_06a0.png" alt="How to upgrade server" />
+                Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to do it, step by step.
+
+Our deploy worker only creates the cheapest plan when spawning your server to save on your expenses and because a single client should be handled pretty well by the server anyway.
+
+Once you start adding more clients and your workload is putting a higher pressure on the server it is time to log into your Digitalocean account and perform the upgrade which involves a server reboot so be prepared for a drop on the connection with the VPN.
+
+The first step is to identify your server and click on it so we can navigate to the info page where all the options will be available to us. One thing that I recommend before any major operation such as this one is to backup your server. So go ahead and power off the server and then navigate to the "Backups" page.
+![backup](media/files/screenshot-cloud.digitalocean.com-2020.10.25-00_27_56.png)
+
+            ]]>
+        </content>
+    </entry>
+</feed>
