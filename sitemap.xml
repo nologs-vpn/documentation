@@ -14,10 +14,26 @@
 </url>
 <url>
 <loc>https://nologs-vpn.github.io/documentation/how-to-add-a-new-openvpn-user/</loc>
-<lastmod>2020-10-25T02:20:10+03:00</lastmod>
+<lastmod>2020-10-25T03:13:32+03:00</lastmod>
 <image:image>
 <image:loc>https://nologs-vpn.github.io/documentation/media/posts/5/undraw_server_cluster_jwwq.png</image:loc>
 <image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://nologs-vpn.github.io/documentation/how-to-add-a-new-user-to-your-vpn-instance/</loc>
+<lastmod>2020-10-25T03:13:55+03:00</lastmod>
+<image:image>
+<image:loc>https://nologs-vpn.github.io/documentation/media/posts/7/undraw_Add_friends_wa2a.png</image:loc>
+<image:title><![CDATA[How to add a new user to your VPN instance]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://nologs-vpn.github.io/documentation/how-to-add-a-new-wireguard-user/</loc>
+<lastmod>2020-10-25T03:13:26+03:00</lastmod>
+<image:image>
+<image:loc>https://nologs-vpn.github.io/documentation/media/posts/6/undraw_secure_server_s9u8.png</image:loc>
+<image:title><![CDATA[How to add a new Wireguard user]]></image:title>
 </image:image>
 </url>
 <url>
