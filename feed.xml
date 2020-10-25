@@ -3,7 +3,7 @@
     <title>NoLogs VPN</title>
     <link href="https://nologs-vpn.github.io/documentation/feed.xml" rel="self" />
     <link href="https://nologs-vpn.github.io/documentation" />
-    <updated>2020-10-25T03:13:55+03:00</updated>
+    <updated>2020-10-25T03:18:05+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
@@ -50,7 +50,7 @@
             <category term="user"/>
             <category term="server"/>
 
-        <updated>2020-10-25T03:13:26+03:00</updated>
+        <updated>2020-10-25T03:16:02+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://nologs-vpn.github.io/documentation/media/posts/6/undraw_secure_server_s9u8.png" alt="How to add a new Wireguard user" />
@@ -114,7 +114,7 @@ PersistentKeepalive = 25</pre>
             <category term="server"/>
             <category term="openvpn"/>
 
-        <updated>2020-10-25T03:13:32+03:00</updated>
+        <updated>2020-10-25T03:16:06+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://nologs-vpn.github.io/documentation/media/posts/5/undraw_server_cluster_jwwq.png" alt="" />
@@ -150,7 +150,7 @@ PersistentKeepalive = 25</pre>
             <category term="root"/>
             <category term="console"/>
 
-        <updated>2020-10-25T02:08:42+03:00</updated>
+        <updated>2020-10-25T03:18:05+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://nologs-vpn.github.io/documentation/media/posts/4/undraw_server_cluster_jwwq.png" alt="How to access the console of your VM" />
@@ -183,7 +183,11 @@ PersistentKeepalive = 25</pre>
   </p>
 
   <p>
-    With the new root password in your clipboard go ahead and SSH into your server. You will be prompted for the password and also for a new one immediately after logging in.
+    With the new root password in your clipboard go ahead and SSH into your server.&nbsp; This is a bit tricky because the ssh password authentication is not enabled so you will need to use the console access from the same Access page.
+  </p>
+
+  <p>
+    You will be prompted for the password and also for a new one immediately after logging in.
   </p>
             ]]>
         </content>

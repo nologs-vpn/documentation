@@ -44,7 +44,7 @@
                    "server"
             ],
             "date_published": "2020-10-25T02:22:24+03:00",
-            "date_modified": "2020-10-25T03:13:26+03:00"
+            "date_modified": "2020-10-25T03:16:02+03:00"
         },
         {
             "id": "https://nologs-vpn.github.io/documentation/how-to-add-a-new-openvpn-user/",
@@ -62,14 +62,14 @@
                    "openvpn"
             ],
             "date_published": "2020-10-25T02:16:53+03:00",
-            "date_modified": "2020-10-25T03:13:32+03:00"
+            "date_modified": "2020-10-25T03:16:06+03:00"
         },
         {
             "id": "https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/",
             "url": "https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/",
             "title": "How to access the console of your VM",
             "summary": " In this post I will show you how to reset your server's root password and gain access to the root console. The next thing&hellip;",
-            "content_html": "\n  <p>\n    In this post I will show you how to reset your server's root password and gain access to the root console.\n  </p>\n\n  <p>\n    The next thing after receiving your config should be to allow others to connect without sharing the security credentials but, by doing so, you will have to work with the unix console a bit and that means gaining access to the root user.\n  </p>\n\n  <p>\n    After install, our drone/worker removes the authentication key that was used to create the VM. This means that, without a root password, you will not be able to login to the ssh. Luckily, we can reset that password and login so go ahead to the&nbsp; VM page and navigate to <b>Access</b> part.\n  </p>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://nologs-vpn.github.io/documentation/media/posts/4/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47.png\" sizes=\"(max-width: 749px) 100vw, 749px\" srcset=\"https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-xs.png 300w ,https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-sm.png 480w ,https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-md.png 749w\"  height=\"744\" width=\"1242\" alt=\"\" />\n      \n    </figure>\n\n  <p>\n    From the screenshot you can see the \"Reset Root Password\" button. Click on it and wait for an email to arrive with the new password but bear in mind that your VM has to be powered off for this operation to continue.\n  </p>\n\n  <p>\n    With the new root password in your clipboard go ahead and SSH into your server. You will be prompted for the password and also for a new one immediately after logging in.\n  </p>",
+            "content_html": "\n  <p>\n    In this post I will show you how to reset your server's root password and gain access to the root console.\n  </p>\n\n  <p>\n    The next thing after receiving your config should be to allow others to connect without sharing the security credentials but, by doing so, you will have to work with the unix console a bit and that means gaining access to the root user.\n  </p>\n\n  <p>\n    After install, our drone/worker removes the authentication key that was used to create the VM. This means that, without a root password, you will not be able to login to the ssh. Luckily, we can reset that password and login so go ahead to the&nbsp; VM page and navigate to <b>Access</b> part.\n  </p>\n\n    <figure class=\"post__image post__image--center\">\n      <img loading=\"lazy\" src=\"https://nologs-vpn.github.io/documentation/media/posts/4/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47.png\" sizes=\"(max-width: 749px) 100vw, 749px\" srcset=\"https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-xs.png 300w ,https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-sm.png 480w ,https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-md.png 749w\"  height=\"744\" width=\"1242\" alt=\"\" />\n      \n    </figure>\n\n  <p>\n    From the screenshot you can see the \"Reset Root Password\" button. Click on it and wait for an email to arrive with the new password but bear in mind that your VM has to be powered off for this operation to continue.\n  </p>\n\n  <p>\n    With the new root password in your clipboard go ahead and SSH into your server.&nbsp; This is a bit tricky because the ssh password authentication is not enabled so you will need to use the console access from the same Access page.\n  </p>\n\n  <p>\n    You will be prompted for the password and also for a new one immediately after logging in.\n  </p>",
             "image": "https://nologs-vpn.github.io/documentation/media/posts/4/undraw_server_cluster_jwwq.png",
             "author": {
                 "name": "Romeo Mihalcea"
@@ -80,7 +80,7 @@
                    "console"
             ],
             "date_published": "2020-10-25T01:56:46+03:00",
-            "date_modified": "2020-10-25T02:08:42+03:00"
+            "date_modified": "2020-10-25T03:18:05+03:00"
         },
         {
             "id": "https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/",
