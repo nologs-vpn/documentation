@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>NoLogs VPN</title>
-    <link href="https://nologs-vpn.github.io/documentation/feed.xml" rel="self" />
-    <link href="https://nologs-vpn.github.io/documentation" />
+    <title>NoLogs VPN documentation</title>
+    <link href="https://kb.nologs-vpn.com/feed.xml" rel="self" />
+    <link href="https://kb.nologs-vpn.com" />
     <updated>2020-10-25T03:18:05+03:00</updated>
     <author>
         <name>Romeo Mihalcea</name>
     </author>
-    <id>https://nologs-vpn.github.io/documentation</id>
+    <id>https://kb.nologs-vpn.com</id>
 
     <entry>
         <title>How to add a new user to your VPN instance</title>
         <author>
             <name>Romeo Mihalcea</name>
         </author>
-        <link href="https://nologs-vpn.github.io/documentation/how-to-add-a-new-user-to-your-vpn-instance/"/>
-        <id>https://nologs-vpn.github.io/documentation/how-to-add-a-new-user-to-your-vpn-instance/</id>
+        <link href="https://kb.nologs-vpn.com/how-to-add-a-new-user-to-your-vpn-instance/"/>
+        <id>https://kb.nologs-vpn.com/how-to-add-a-new-user-to-your-vpn-instance/</id>
             <category term="wireguard"/>
             <category term="user"/>
             <category term="openvpn"/>
@@ -24,18 +24,18 @@
         <updated>2020-10-25T03:13:55+03:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://nologs-vpn.github.io/documentation/media/posts/7/undraw_Add_friends_wa2a.png" alt="How to add a new user to your VPN instance" />
+                        <img src="https://kb.nologs-vpn.com/media/posts/7/undraw_Add_friends_wa2a.png" alt="How to add a new user to your VPN instance" />
                     <p>In this post I will guide you through the process of adding new users to your VPN instance.</p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://nologs-vpn.github.io/documentation/media/posts/7/undraw_Add_friends_wa2a.png" alt="How to add a new user to your VPN instance" />
+                    <img src="https://kb.nologs-vpn.com/media/posts/7/undraw_Add_friends_wa2a.png" alt="How to add a new user to your VPN instance" />
                 <p>In this post I will guide you through the process of adding new users to your VPN instance.</p>
 
-<p><a href="https://nologs-vpn.github.io/documentation/how-to-add-a-new-openvpn-user/"></a><a href="https://nologs-vpn.github.io/documentation/how-to-add-a-new-openvpn-user/">How to add a new user to OpenVPN</a></p>
-<p><a href="https://nologs-vpn.github.io/documentation/how-to-add-a-new-wireguard-user/">How to add a new user to Wireguard</a></p>
+<p><a href="https://kb.nologs-vpn.com/how-to-add-a-new-openvpn-user/"></a><a href="https://kb.nologs-vpn.com/how-to-add-a-new-openvpn-user/">How to add a new user to OpenVPN</a></p>
+<p><a href="https://kb.nologs-vpn.com/how-to-add-a-new-wireguard-user/">How to add a new user to Wireguard</a></p>
             ]]>
         </content>
     </entry>
@@ -44,8 +44,8 @@
         <author>
             <name>Romeo Mihalcea</name>
         </author>
-        <link href="https://nologs-vpn.github.io/documentation/how-to-add-a-new-wireguard-user/"/>
-        <id>https://nologs-vpn.github.io/documentation/how-to-add-a-new-wireguard-user/</id>
+        <link href="https://kb.nologs-vpn.com/how-to-add-a-new-wireguard-user/"/>
+        <id>https://kb.nologs-vpn.com/how-to-add-a-new-wireguard-user/</id>
             <category term="wireguard"/>
             <category term="user"/>
             <category term="server"/>
@@ -53,19 +53,19 @@
         <updated>2020-10-25T03:16:02+03:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://nologs-vpn.github.io/documentation/media/posts/6/undraw_secure_server_s9u8.png" alt="How to add a new Wireguard user" />
+                        <img src="https://kb.nologs-vpn.com/media/posts/6/undraw_secure_server_s9u8.png" alt="How to add a new Wireguard user" />
                     <p>In this post I will show you how to create new users for your Wireguard VPN instance.</p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://nologs-vpn.github.io/documentation/media/posts/6/undraw_secure_server_s9u8.png" alt="How to add a new Wireguard user" />
+                    <img src="https://kb.nologs-vpn.com/media/posts/6/undraw_secure_server_s9u8.png" alt="How to add a new Wireguard user" />
                 <p>In this post I will show you how to create new users for your Wireguard VPN instance.</p>
 
-<p>For this operation to be possible you will need to have root access to your server. If you don't know how to gain that, please <a href="https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/">follow our guide</a>.</p>
+<p>For this operation to be possible you will need to have root access to your server. If you don't know how to gain that, please <a href="https://kb.nologs-vpn.com/how-to-access-the-console-of-your-vm/">follow our guide</a>.</p>
 <h3>Generate Wireguard client keys</h3>
-<p><a href="https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/"></a>After logging in the ssh console you need to create the keys for the new user. Wireguard uses these keys to keep track of peers and authenticate them:</p>
+<p><a href="https://kb.nologs-vpn.com/how-to-access-the-console-of-your-vm/"></a>After logging in the ssh console you need to create the keys for the new user. Wireguard uses these keys to keep track of peers and authenticate them:</p>
 <pre>docker run --rm cmulk/wireguard-docker:buster genkeys</pre>
 <p>This will print 2 keys: a public and a private one:</p>
 <pre>-e Private Key: 8JlkyYRuR/OdFlBOUDVfM+DknvUUsjtnduNoEeqsLWA=<br>-e Public Key: KglpBFVBdJhCIkrs8ZK/EZhkSkslz873CroBAEsg/2I=</pre>
@@ -108,8 +108,8 @@ PersistentKeepalive = 25</pre>
         <author>
             <name>Romeo Mihalcea</name>
         </author>
-        <link href="https://nologs-vpn.github.io/documentation/how-to-add-a-new-openvpn-user/"/>
-        <id>https://nologs-vpn.github.io/documentation/how-to-add-a-new-openvpn-user/</id>
+        <link href="https://kb.nologs-vpn.com/how-to-add-a-new-openvpn-user/"/>
+        <id>https://kb.nologs-vpn.com/how-to-add-a-new-openvpn-user/</id>
             <category term="user"/>
             <category term="server"/>
             <category term="openvpn"/>
@@ -117,18 +117,18 @@ PersistentKeepalive = 25</pre>
         <updated>2020-10-25T03:16:06+03:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://nologs-vpn.github.io/documentation/media/posts/5/undraw_server_cluster_jwwq.png" alt="" />
+                        <img src="https://kb.nologs-vpn.com/media/posts/5/undraw_server_cluster_jwwq.png" alt="" />
                     <p>In this post we will show you how to create new users for your OpenVPN instance.</p>
 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://nologs-vpn.github.io/documentation/media/posts/5/undraw_server_cluster_jwwq.png" alt="" />
+                    <img src="https://kb.nologs-vpn.com/media/posts/5/undraw_server_cluster_jwwq.png" alt="" />
                 <p>In this post we will show you how to create new users for your OpenVPN instance.</p>
 
-<p>For this operation to be possible you will need to have root access to your server. If you don't know how to gain that, please <a href="https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/">follow our guide</a>.</p>
-<p><a href="https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/"></a>After logging in the ssh console you can run the following command in order to create new users:</p>
+<p>For this operation to be possible you will need to have root access to your server. If you don't know how to gain that, please <a href="https://kb.nologs-vpn.com/how-to-access-the-console-of-your-vm/">follow our guide</a>.</p>
+<p><a href="https://kb.nologs-vpn.com/how-to-access-the-console-of-your-vm/"></a>After logging in the ssh console you can run the following command in order to create new users:</p>
 <pre>docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm -it kylemanna/openvpn easyrsa build-client-full CLIENTNAME nopass</pre>
 <p>Replace <code>CLIENTNAME</code> with a username.</p>
 <p>This will generate the files for the new user and place them in the right directory. The command will also prompt for your password (<strong>it's the one that was emailed to you when we sent you the first config</strong>).</p>
@@ -144,8 +144,8 @@ PersistentKeepalive = 25</pre>
         <author>
             <name>Romeo Mihalcea</name>
         </author>
-        <link href="https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/"/>
-        <id>https://nologs-vpn.github.io/documentation/how-to-access-the-console-of-your-vm/</id>
+        <link href="https://kb.nologs-vpn.com/how-to-access-the-console-of-your-vm/"/>
+        <id>https://kb.nologs-vpn.com/how-to-access-the-console-of-your-vm/</id>
             <category term="server"/>
             <category term="root"/>
             <category term="console"/>
@@ -153,13 +153,13 @@ PersistentKeepalive = 25</pre>
         <updated>2020-10-25T03:18:05+03:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://nologs-vpn.github.io/documentation/media/posts/4/undraw_server_cluster_jwwq.png" alt="How to access the console of your VM" />
+                        <img src="https://kb.nologs-vpn.com/media/posts/4/undraw_server_cluster_jwwq.png" alt="How to access the console of your VM" />
                      In this post I will show you how to reset your server's root password and gain access to the root console. The next thing&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://nologs-vpn.github.io/documentation/media/posts/4/undraw_server_cluster_jwwq.png" alt="How to access the console of your VM" />
+                    <img src="https://kb.nologs-vpn.com/media/posts/4/undraw_server_cluster_jwwq.png" alt="How to access the console of your VM" />
                 
   <p>
     In this post I will show you how to reset your server's root password and gain access to the root console.
@@ -174,7 +174,7 @@ PersistentKeepalive = 25</pre>
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://nologs-vpn.github.io/documentation/media/posts/4/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47.png" sizes="(max-width: 749px) 100vw, 749px" srcset="https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-xs.png 300w ,https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-sm.png 480w ,https://nologs-vpn.github.io/documentation/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-md.png 749w"  height="744" width="1242" alt="" />
+      <img loading="lazy" src="https://kb.nologs-vpn.com/media/posts/4/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47.png" sizes="(max-width: 749px) 100vw, 749px" srcset="https://kb.nologs-vpn.com/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-xs.png 300w ,https://kb.nologs-vpn.com/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-sm.png 480w ,https://kb.nologs-vpn.com/media/posts/4/responsive/screenshot-cloud.digitalocean.com-2020.10.25-02_05_47-md.png 749w"  height="744" width="1242" alt="" />
       
     </figure>
 
@@ -197,21 +197,21 @@ PersistentKeepalive = 25</pre>
         <author>
             <name>Romeo Mihalcea</name>
         </author>
-        <link href="https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/"/>
-        <id>https://nologs-vpn.github.io/documentation/how-to-upgrade-your-server/</id>
+        <link href="https://kb.nologs-vpn.com/how-to-upgrade-your-server/"/>
+        <id>https://kb.nologs-vpn.com/how-to-upgrade-your-server/</id>
             <category term="upgrade"/>
             <category term="server"/>
 
         <updated>2020-10-25T01:53:17+03:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://nologs-vpn.github.io/documentation/media/posts/2/undraw_upgrade_06a0.png" alt="How to upgrade your server" />
+                        <img src="https://kb.nologs-vpn.com/media/posts/2/undraw_upgrade_06a0.png" alt="How to upgrade your server" />
                      Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://nologs-vpn.github.io/documentation/media/posts/2/undraw_upgrade_06a0.png" alt="How to upgrade your server" />
+                    <img src="https://kb.nologs-vpn.com/media/posts/2/undraw_upgrade_06a0.png" alt="How to upgrade your server" />
                 
   <p>
     Upgrading your server is easy and it shouldn't take more than a couple of minutes. In this article I will show you how to do it, step by step.<br>
@@ -230,7 +230,7 @@ PersistentKeepalive = 25</pre>
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://nologs-vpn.github.io/documentation/media/posts/2/snapshot-2.png" sizes="(max-width: 749px) 100vw, 749px" srcset="https://nologs-vpn.github.io/documentation/media/posts/2/responsive/snapshot-2-xs.png 300w ,https://nologs-vpn.github.io/documentation/media/posts/2/responsive/snapshot-2-sm.png 480w ,https://nologs-vpn.github.io/documentation/media/posts/2/responsive/snapshot-2-md.png 749w"  height="806" width="1128" alt="" />
+      <img loading="lazy" src="https://kb.nologs-vpn.com/media/posts/2/snapshot-2.png" sizes="(max-width: 749px) 100vw, 749px" srcset="https://kb.nologs-vpn.com/media/posts/2/responsive/snapshot-2-xs.png 300w ,https://kb.nologs-vpn.com/media/posts/2/responsive/snapshot-2-sm.png 480w ,https://kb.nologs-vpn.com/media/posts/2/responsive/snapshot-2-md.png 749w"  height="806" width="1128" alt="" />
       
     </figure>
 
@@ -243,7 +243,7 @@ PersistentKeepalive = 25</pre>
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://nologs-vpn.github.io/documentation/media/posts/2/resize-2.png" sizes="(max-width: 749px) 100vw, 749px" srcset="https://nologs-vpn.github.io/documentation/media/posts/2/responsive/resize-2-xs.png 300w ,https://nologs-vpn.github.io/documentation/media/posts/2/responsive/resize-2-sm.png 480w ,https://nologs-vpn.github.io/documentation/media/posts/2/responsive/resize-2-md.png 749w"  height="1147" width="1104" alt="" />
+      <img loading="lazy" src="https://kb.nologs-vpn.com/media/posts/2/resize-2.png" sizes="(max-width: 749px) 100vw, 749px" srcset="https://kb.nologs-vpn.com/media/posts/2/responsive/resize-2-xs.png 300w ,https://kb.nologs-vpn.com/media/posts/2/responsive/resize-2-sm.png 480w ,https://kb.nologs-vpn.com/media/posts/2/responsive/resize-2-md.png 749w"  height="1147" width="1104" alt="" />
       
     </figure>
 
